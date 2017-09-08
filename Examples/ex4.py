@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-cars = 100
-space_in_a_car = 4.0
-drivers = 30
-passengers = 90
+cars = 100				# total number of cars
+space_in_a_car = 4.0	# space in a car, float number
+drivers = 30			# number of drivers (on the road)
+passengers = 90			# people who want carpool
 
 cars_not_driven = cars - drivers
 cars_driven = drivers
