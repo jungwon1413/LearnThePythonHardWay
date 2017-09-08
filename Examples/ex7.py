@@ -14,5 +14,5 @@ end6 = "버"
 end7 = "거"
 
 # 마지막에 쉼표가 보이죠? 지워보고 무슨 일이 일어나나 보세요
-print(end1 + end2 + end3,)
+print(end1 + end2 + end3,)         # check https://stackoverflow.com/questions/18908897/whats-ending-comma-in-print-function-for
 print(end4 + end5 + end6 + end7)
