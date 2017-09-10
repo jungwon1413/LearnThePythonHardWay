@@ -8,21 +8,21 @@ class Animal(object):
 class Dog(Animal):
 
 	def __init__(self, name):
-		## ??
+		## Dog는 Animal 종류의 name(self.name)을 갖고 있다. (has-a)
 		self.name = name
 
 ## Cat은 Animal의 일종이다. (이것도 상속인가?)
 class Cat(Animal):
 
 	def __init__(self, name):
-		## ??
+		## Cat은 Animal 종류의 name을 갖고 있다. (has-a)
 		self.name = name
 
 ## Person은 object의 일종이다.
 class Person(object):
 
 	def __init__(self, name):
-		## ??
+		## Person은 어떤 종류의 name을 갖고 있다. (has-a)
 		self.name = name
 
 		## Person은 어떤 종류의 pet을 갖고 있다 (has-a)
@@ -32,9 +32,9 @@ class Person(object):
 class Employee(Person):
 
 	def __init__(self, name, salary):
-		## ?? 음 이 마법은 뭐죠?
+		## ?? 음 이 마법은 뭐죠?    >>>>    부모 클래스의 __init__ 메서드(method)를 실행하는 확실한 방법입니다. 자세한것은 'python super'로 검색.
 		super(Employee, self).__init__(name)
-		## ??
+		## Employee는 Person 종류의 salary를 갖고 있다. (has-a)
 		self.salary = salary
 
 ## Fish는 object의 일종이다.
@@ -53,10 +53,10 @@ class Halibut(Fish):
 ## rover는 Dog의 일종이다. (is-a)
 rover = Dog("Rover")
 
-## satan은 Cat의 일종이다
+## satan은 Cat의 일종이다.
 satan = Cat("Satan")
 
-## mary는 Person의 일종이다
+## mary는 Person의 일종이다.
 mary = Person("Mary")
 
 ## mary 변수에서 pet속성을 받아 satan값으로 정한다.
